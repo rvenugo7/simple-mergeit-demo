@@ -11,3 +11,7 @@ def test_rejects_negative_prices():
         assert False, "expected ValueError"
     except ValueError as exc:
         assert "non-negative" in str(exc)
+
+
+def test_applies_student_discount():
+    assert calculate_total(100.0, is_student=True) == 90.0
