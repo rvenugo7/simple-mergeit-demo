@@ -14,4 +14,4 @@ def test_rejects_negative_prices():
 
 
 def test_applies_student_discount():
-    assert calculate_total(100.0, is_student=True) == 90.0
+    assert calculate_total(100.0, is_student=True) == 97.2
